@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./global.css";
+
+import ComboBox from "./components/ComboBox";
+
+const dados = [
+  { id: 1, nome: "Miguel" },
+  { id: 2, nome: "Lucas" },
+  { id: 3, nome: "Emilio" },
+  { id: 4, nome: "Diego" },
+  { id: 5, nome: "Maria" },
+  { id: 6, nome: "Jose" },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ComboBox data={dados} />
+    </>
   );
 }
 
