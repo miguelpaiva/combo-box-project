@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   Container,
@@ -15,8 +15,6 @@ function ComboBox({ data, inputProps, icon }) {
   const [isVisible, setIsVisible] = useState(false);
   const [options, setOptions] = useState([]);
   const [search, setSearch] = useState("");
-
-  const wrapperRef = useRef(null);
 
   useEffect(() => {
     const filteredList = data.filter(
@@ -58,7 +56,7 @@ function ComboBox({ data, inputProps, icon }) {
       </MainBox>
 
       {isVisible && (
-        <Select ref={wrapperRef}>
+        <Select>
           <List>
             {options.map((item) => (
               <ListItem key={item.id} onClick={() => updateList(item.name)}>

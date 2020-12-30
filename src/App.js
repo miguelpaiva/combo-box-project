@@ -23,6 +23,7 @@ function App() {
   return (
     <>
       <ComboBox data={dados} inputProps={inputProps} />
+      textotexstetextotexstetetextotexstetextotexstetetextotexstetextotexstetetextotexstetextotexstete
     </>
   );
 }

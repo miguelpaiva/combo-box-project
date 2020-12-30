@@ -5,8 +5,9 @@ export const Container = styled.div`
   flex-direction: column;
 
   margin: 20px auto 0;
-
   max-width: 400px;
+
+  position: relative;
 
   h1 {
     margin: 0 auto 15px;
@@ -52,6 +53,8 @@ export const List = styled.div`
   margin-top: 8px;
   border-radius: 4px;
 
+  position: absolute;
+  z-index: 99;
   /*
 
   ${(props) =>
